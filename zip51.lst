@@ -1,0 +1,41 @@
+C51 COMPILER V7.06   ZIP51                                                                 06/04/2012 16:46:14 PAGE 1   
+
+
+C51 COMPILER V7.06, COMPILATION OF MODULE ZIP51
+OBJECT MODULE PLACED IN zip51.obj
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE Source\zip51.c NOAREGS DEBUG OBJECTEXTEND PRINT(.\zip51.lst) OBJECT(zip51.o
+                    -bj)
+
+stmt level    source
+
+   1          
+   2          #define  OS_GLOBALS                          
+   3          #include "..\includes.h"
+   4          
+   5          
+   6          #define  ZIP51_FILE                             /* Prevent the following files from including includes.h */
+   7          
+   8          #include "Zip51Core.c"
+   9          #include "Zip51Task.c"
+  10          #include "Zip51Time.c"
+  11          #include "..\tasks.c"
+  12          
+  13          #include "Zip51Sem.c"
+  14          #include "Zip51Mutex.c"
+  15          #include "Zip51Mbox.c"
+  16          #include "Zip51Q.c"
+  17          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    509    ----
+   CONSTANT SIZE    =     20    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =     35       7
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      1    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
